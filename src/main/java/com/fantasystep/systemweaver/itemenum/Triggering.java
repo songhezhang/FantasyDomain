@@ -6,12 +6,12 @@ import java.util.List;
 import com.fantasystep.annotation.ValueOptionEntry;
 import com.fantasystep.annotation.ValueOptions;
 
-public enum OperatingSystem implements ValueOptions {
-	AUTOSAR("Autosar"), LINUX("Linux");
+public enum Triggering implements ValueOptions {
+	PERIODIC("Periodic"), SIGNAL_TRIGGERED("Signal triggered");
 
 	private String label;
 
-	private OperatingSystem(String label) {
+	private Triggering(String label) {
 		this.label = label;
 	}
 

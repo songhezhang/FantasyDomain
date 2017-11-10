@@ -6,12 +6,13 @@ import java.util.List;
 import com.fantasystep.annotation.ValueOptionEntry;
 import com.fantasystep.annotation.ValueOptions;
 
-public enum OperatingSystem implements ValueOptions {
-	AUTOSAR("Autosar"), LINUX("Linux");
+public enum SupervisionStrategy implements ValueOptions {
+	ALIVE("Alive"), ALIVELOGICAL("Alive & Logical"), LOGICAL("Logical"), NONE("None"),
+	INT32("int32"), UINT32("uint32");
 
 	private String label;
 
-	private OperatingSystem(String label) {
+	private SupervisionStrategy(String label) {
 		this.label = label;
 	}
 

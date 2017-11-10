@@ -6,12 +6,13 @@ import java.util.List;
 import com.fantasystep.annotation.ValueOptionEntry;
 import com.fantasystep.annotation.ValueOptions;
 
-public enum OperatingSystem implements ValueOptions {
-	AUTOSAR("Autosar"), LINUX("Linux");
+public enum ASIL implements ValueOptions {
+	QM("QM"), A("A"), B("B"), C("C"), D("D"), NOTAPPLICABLE("Not Applicable"),
+	QMA("QM(A)"), QMB("QM(B)"), QMC("QM(C)"), QMD("QM(D)"), AB("A(B)"), AC("A(C)"), AD("A(D)"), BC("B(C)"), BD("B(D)"), CD("C(D)");
 
 	private String label;
 
-	private OperatingSystem(String label) {
+	private ASIL(String label) {
 		this.label = label;
 	}
 

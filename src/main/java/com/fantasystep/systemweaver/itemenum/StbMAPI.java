@@ -6,12 +6,12 @@ import java.util.List;
 import com.fantasystep.annotation.ValueOptionEntry;
 import com.fantasystep.annotation.ValueOptions;
 
-public enum OperatingSystem implements ValueOptions {
-	AUTOSAR("Autosar"), LINUX("Linux");
+public enum StbMAPI implements ValueOptions {
+	READ("Read"), NONE("None");
 
 	private String label;
 
-	private OperatingSystem(String label) {
+	private StbMAPI(String label) {
 		this.label = label;
 	}
 

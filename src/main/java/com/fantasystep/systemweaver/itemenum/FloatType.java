@@ -6,12 +6,12 @@ import java.util.List;
 import com.fantasystep.annotation.ValueOptionEntry;
 import com.fantasystep.annotation.ValueOptions;
 
-public enum OperatingSystem implements ValueOptions {
-	AUTOSAR("Autosar"), LINUX("Linux");
+public enum FloatType implements ValueOptions {
+	SINGLE("single"), DOUBLE("double");
 
 	private String label;
 
-	private OperatingSystem(String label) {
+	private FloatType(String label) {
 		this.label = label;
 	}
 

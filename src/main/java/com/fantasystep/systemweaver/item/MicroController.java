@@ -10,13 +10,13 @@ import com.fantasystep.systemweaver.SysWDomain;
 import com.fantasystep.systemweaver.annotation.SystemWeaver;
 import com.fantasystep.systemweaver.itemenum.OperatingSystem;
 
-@DomainClass(validParents = { EcuSw.class }, label = "LABEL_MICRO_CONTROLLER", icon = "gtk-file.png")
+@DomainClass(validParents = { EcuSw.class }, label = "LABEL_MICRO_CONTROLLER", icon = "microcontroller.ico")
 public class MicroController extends SysWDomain {
 
 	private static final long serialVersionUID = -8038543309642613564L;
 	
 	@SystemWeaver
-	@FantasyStep(required = true, storage = Storage.MYSQL, enumType = OperatingSystem.class, valueOptions = OperatingSystem.class, serializationMaximumLength = 32, serializationType = SerializationType.STRING)
+	@FantasyStep(required = true, storage = Storage.MONGO, enumType = OperatingSystem.class, valueOptions = OperatingSystem.class, serializationMaximumLength = 32, serializationType = SerializationType.STRING)
 	@FantasyView(controlType = ControlType.DROPDOWN, label = "LABEL_OPERATING_SYSTEM")
 	private OperatingSystem operatingSystem;
 

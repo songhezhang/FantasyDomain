@@ -6,12 +6,12 @@ import java.util.List;
 import com.fantasystep.annotation.ValueOptionEntry;
 import com.fantasystep.annotation.ValueOptions;
 
-public enum OperatingSystem implements ValueOptions {
-	AUTOSAR("Autosar"), LINUX("Linux");
+public enum BusType implements ValueOptions {
+	ETHERNET("Ethernet"), CAN("Can"), FLEXRAY("Flexray"), LIN("Lin");
 
 	private String label;
 
-	private OperatingSystem(String label) {
+	private BusType(String label) {
 		this.label = label;
 	}
 
