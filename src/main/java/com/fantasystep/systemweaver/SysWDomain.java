@@ -6,13 +6,12 @@ import com.fantasystep.annotation.FantasyStep;
 import com.fantasystep.annotation.FantasyView;
 import com.fantasystep.annotation.SerializationType;
 import com.fantasystep.annotation.Storage;
-import com.fantasystep.domain.MongoDynamicDomain;
 import com.fantasystep.domain.Node;
 import com.fantasystep.systemweaver.annotation.SystemWeaver;
 import com.fantasystep.systemweaver.itemenum.VccModelMapping.VCC_PART_TYPE;
 
 @DomainClass(label = "LABEL_SYSW_DOMAIN", icon = "file-roller.png")
-public abstract class SysWDomain extends Node implements MongoDynamicDomain {
+public abstract class SysWDomain extends Node {
 	
 	private static final long serialVersionUID = 387796940786683851L;
 	
